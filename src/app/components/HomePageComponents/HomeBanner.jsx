@@ -29,11 +29,8 @@ const HomeBanner = () => {
               alt={`Slide ${index + 1}`}
               width={1920}
               height={1080}
-              style={{
-                width: "100%",
-                height: "70vh",
-                objectFit: "cover",
-              }}
+              className="w-full object-cover 
+                         h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh]" // 👈 Responsive heights
               priority
             />
             {/* Overlay */}

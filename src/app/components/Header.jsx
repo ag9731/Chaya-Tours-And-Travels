@@ -24,19 +24,30 @@ const Header = () => {
   return (
     <header className="shadow-sm w-full">
       {/* Upper Header */}
-      <div className="bg-[#e9b100] py-2">
-        <div className="container mx-auto flex justify-between items-center px-4 text-sm sm:text-base">
-          <div className="flex items-center gap-2">
-            <PhoneIcon className="text-black" />
-            <p className="hidden sm:block">6363987198</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <EmailIcon className="text-black" />
-            <p className="hidden sm:block">pravegowda676@gmail.com</p>
-          </div>
-          <div className="flex gap-2 cursor-pointer">
-            <FacebookIcon className="text-black" />
-            <InstagramIcon className="text-black" />
+      <div className="bg-[#e9b100] py-1 sm:py-2">
+        <div className="container mx-auto flex flex-wrap justify-between items-center px-2 sm:px-4 text-xs sm:text-sm md:text-base">
+          {/* Phone */}
+          <a
+            href="tel:6363987198"
+            className="flex items-center gap-1 sm:gap-2 text-black cursor-pointer hover:text-gray-800"
+          >
+            <PhoneIcon className="text-black !text-[16px] sm:!text-[18px]" />
+            <p className="truncate">6363987198</p>
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:pravegowda676@gmail.com"
+            className="flex items-center gap-1 sm:gap-2 text-black cursor-pointer hover:text-gray-800"
+          >
+            <EmailIcon className="text-black !text-[16px] sm:!text-[18px]" />
+            <p className="truncate">pravegowda676@gmail.com</p>
+          </a>
+
+          {/* Social Icons */}
+          <div className="flex gap-2 sm:gap-3">
+            <FacebookIcon className="text-black !text-[18px] sm:!text-[20px] cursor-pointer hover:text-gray-800" />
+            <InstagramIcon className="text-black !text-[18px] sm:!text-[20px] cursor-pointer hover:text-gray-800" />
           </div>
         </div>
       </div>
@@ -49,14 +60,15 @@ const Header = () => {
             <Image
               src="/assets/chaya_tours_and_travels_bangaluru_logo.png"
               alt="Logo"
-              width={120}
-              height={60}
+              width={110}
+              height={55}
+              className="w-[90px] sm:w-[110px] h-auto"
             />
           </Link>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex gap-10 items-center">
+        <ul className="hidden lg:flex gap-10 items-center text-base md:text-lg">
           {menuItems.map((menuItem, index) => (
             <li
               key={index}
@@ -66,9 +78,11 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <button className="text-black bg-[#e9b100] px-6 py-2 rounded-md hover:bg-black hover:text-white transition-colors duration-300">
-              Book Now
-            </button>
+            <Link href="/contactus">
+              <button className="text-black bg-[#e9b100] px-6 py-2 rounded-md hover:bg-black hover:text-white transition-colors duration-300">
+                Book Now
+              </button>
+            </Link>
           </li>
         </ul>
 
@@ -76,9 +90,9 @@ const Header = () => {
         <div className="lg:hidden">
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? (
-              <CloseIcon style={{ fontSize: 30 }} className="text-black " />
+              <CloseIcon style={{ fontSize: 28 }} className="text-black" />
             ) : (
-              <MenuIcon style={{ fontSize: 30 }} className="text-black " />
+              <MenuIcon style={{ fontSize: 28 }} className="text-black" />
             )}
           </button>
         </div>
@@ -92,15 +106,20 @@ const Header = () => {
               <li
                 key={index}
                 className="cursor-pointer hover:text-[#e9b100] transition-colors duration-300"
-                onClick={() => setMobileMenuOpen(false)} // Close menu on click
+                onClick={() => setMobileMenuOpen(false)}
               >
                 <Link href={menuItem.href}>{menuItem.menuName}</Link>
               </li>
             ))}
             <li>
-              <button className="w-full text-black bg-[#e9b100] px-6 py-2 rounded-md hover:bg-black hover:text-white transition-colors duration-300">
-                Book Now
-              </button>
+              <Link href="/contactus">
+                <button
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="cursor-pointer w-full text-black bg-[#e9b100] px-6 py-2 rounded-md hover:bg-black hover:text-white transition-colors duration-300"
+                >
+                  Book Now
+                </button>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,8 +1,11 @@
+"use client";
+
 import sedan from "@/app/components/HomePageComponents/fleets/sedan.png";
 import luxurycar from "@/app/components/HomePageComponents/fleets/luxury_car.png";
 import suvmuv from "@/app/components/HomePageComponents/fleets/suv_muv.png";
 import tempotraveller from "@/app/components/HomePageComponents/fleets/tempo_traveller.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const HomeFleetsSection = () => {
   const fleets = [
@@ -74,28 +77,28 @@ const HomeFleetsSection = () => {
                 {fleet.fleetName}
               </h2>
 
-              <p className="text-red-500 font-semibold uppercase bg-gray-100 px-3 py-1 rounded-md mt-2">
-                Rs {fleet.fleetPrice}
-              </p>
-
               <p className="text-gray-700 text-center mt-3 text-sm sm:text-base leading-relaxed">
                 {fleet.fleetDesc}
               </p>
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-5 items-center justify-center mt-6">
-                <button
-                  className="border-2 border-[#e9b100] text-gray-800 font-semibold py-2 px-6 rounded-lg 
+                <Link href="/pricing">
+                  <button
+                    className="cursor-pointer border-2 border-[#e9b100] text-gray-800 font-semibold py-2 px-6 rounded-lg 
                                    hover:bg-[#e9b100] hover:text-white transition-colors duration-300"
-                >
-                  Pricing
-                </button>
-                <button
-                  className="border-2 border-[#e9b100] text-gray-800 font-semibold py-2 px-6 rounded-lg 
+                  >
+                    Pricing
+                  </button>
+                </Link>
+                <Link href="/contactus">
+                  <button
+                    className="cursor-pointer border-2 border-[#e9b100] text-gray-800 font-semibold py-2 px-6 rounded-lg 
                                    hover:bg-[#e9b100] hover:text-white transition-colors duration-300"
-                >
-                  Book Now
-                </button>
+                  >
+                    Book Now
+                  </button>
+                </Link>
               </div>
             </div>
           ))}

@@ -2,6 +2,7 @@
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import Link from "next/link";
 
 // Example images (replace with your actual imports or URLs)
 import car1 from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car1.webp";
@@ -9,8 +10,6 @@ import car2 from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car2.w
 import car3 from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car3.webp";
 import car4 from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car4.webp";
 import car5 from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car5.webp";
-import car6 from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car6.webp";
-import car7 from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car7.webp";
 
 const AboutUsSection2 = () => {
   const images = [car1, car2, car3, car4, car5];
@@ -60,9 +59,13 @@ const AboutUsSection2 = () => {
             on delivering seamless travel experiences through timely service,
             transparent pricing, and personalized attention to each customer.
           </p>
-          <button type="button" className="text-black bg-[#e9b100] px-7 py-2">
-            Book Now
-          </button>
+
+          {/* Book Now Button */}
+          <Link href="/contactus">
+            <button className="cursor-pointer text-black bg-[#e9b100] px-7 py-2 rounded-md hover:bg-black hover:text-white transition-colors duration-300 w-max">
+              Book Now
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import HomeFacilitiesSection from "./components/HomePageComponents/HomeFacilitie
 import HomeFleetsSection from "./components/HomePageComponents/HomeFleetsSection";
 import HomeServices from "./components/HomePageComponents/HomeServices";
 import HomePageContactUs from "./components/HomePageComponents/HomePageContactUs";
+import HomePackagesSection from "./components/HomePageComponents/HomePackagesSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="flex flex-col gap-20 bg-gray-50">
         <HomeBanner />
         <HomeAboutUs />
+        <HomePackagesSection/>
         <HomeFacilitiesSection />
         <HomeFleetsSection/>
         <HomeServices/>

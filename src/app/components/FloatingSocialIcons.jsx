@@ -14,7 +14,7 @@ const FloatingIcons = () => {
     >
       {/* Facebook */}
       <a
-        href="https://facebook.com"
+        href="https://www.facebook.com/profile.php?id=61552426832299"
         target="_blank"
         rel="noopener noreferrer"
         className="

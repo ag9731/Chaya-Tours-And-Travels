@@ -17,10 +17,10 @@ const HomeFleetsSection = () => {
       fleetPrice: "12/km",
     },
     {
-      fleetName: "SUVs / MUVs",
+      fleetName: "SUV",
       fleetImage: suvmuv,
       fleetDesc:
-        "Spacious and powerful SUVs/MUVs, perfect for family trips or outstation travel.",
+        "Spacious and powerful SUVs, perfect for family trips or outstation travel.",
       fleetPrice: "12/km",
     },
     {

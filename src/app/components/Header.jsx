@@ -18,6 +18,7 @@ const Header = () => {
     { menuName: "About", href: "/aboutus" },
     { menuName: "Services", href: "/services" },
     { menuName: "Pricing", href: "/pricing" },
+    { menuName: "Packages", href: "/packages" },
     { menuName: "Contact Us", href: "/contactus" },
   ];
 
@@ -105,7 +106,7 @@ const Header = () => {
             {menuItems.map((menuItem, index) => (
               <li
                 key={index}
-                className="cursor-pointer hover:text-[#e9b100] transition-colors duration-300"
+                className="cursor-pointer hover:text-[#e9b100] transition-colors duration-300 "
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Link href={menuItem.href}>{menuItem.menuName}</Link>

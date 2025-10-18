@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import marutiErtiga from "@/app/components/PricingPageComponents/assets_car_images/marutiErtiga.png";
 import sedenLuxury from "@/app/components/PricingPageComponents/assets_car_images/sedenLuxury.png";
@@ -51,7 +54,7 @@ const carPricing = [
     ],
   },
   {
-    category: "MPV Category",
+    category: "SUV Category",
     cars: [
       { name: "Maruti Ertiga", image: marutiErtiga },
       { name: "Kia Carens", image: kiaCarens },
@@ -93,13 +96,13 @@ const carPricing = [
 
 const PricingPage = () => {
   return (
-    <div className="bg-gray-50 min-h-screen py-16 px-6 lg:px-16">
+    <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-16">
       {/* Page Header */}
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      <div className="max-w-7xl mx-auto text-center mb-12 px-2 sm:px-0">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Our <span className="text-[#e9b100]">Pricing</span> Plans
         </h1>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
           Choose from our wide range of comfortable and affordable vehicles.
           Transparent pricing, no hidden charges — perfect for local,
           outstation, and airport trips.
@@ -107,14 +110,14 @@ const PricingPage = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {carPricing.map((section, index) => (
           <div
             key={index}
             className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between"
           >
             <div className="p-6 flex flex-col items-center">
-              <h2 className="text-2xl font-bold text-[#e9b100] mb-4 text-center">
+              <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-[#e9b100] mb-4 text-center">
                 {section.category}
               </h2>
 
@@ -122,7 +125,7 @@ const PricingPage = () => {
               <div className="flex flex-wrap justify-center gap-4 mb-6">
                 {section.cars.map((car, idx) => (
                   <div key={idx} className="flex flex-col items-center">
-                    <div className="w-44 h-28 relative">
+                    <div className="w-36 h-28 relative sm:w-44 sm:h-28 md:w-48 md:h-32">
                       <Image
                         src={car.image}
                         alt={car.name}
@@ -130,7 +133,7 @@ const PricingPage = () => {
                         className="object-contain"
                       />
                     </div>
-                    <p className="text-sm font-medium text-gray-700 mt-2">
+                    <p className="text-sm sm:text-base font-medium text-gray-700 mt-2 text-center">
                       {car.name}
                     </p>
                   </div>
@@ -138,7 +141,7 @@ const PricingPage = () => {
               </div>
 
               {/* Pricing Table */}
-              <table className="w-full text-sm md:text-base">
+              <table className="w-full text-sm sm:text-base md:text-base">
                 <tbody>
                   {section.details.map((item, i) => (
                     <tr
@@ -159,9 +162,11 @@ const PricingPage = () => {
 
             {/* Book Now Button */}
             <div className="p-6 pt-0 flex justify-center">
-              <button className="bg-[#e9b100] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#c69700] transition duration-300">
-                Book Now
-              </button>
+              <Link href="/contactus">
+                <button className="cursor-pointer bg-[#e9b100] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#c69700] transition duration-300 w-full sm:w-auto">
+                  Book Now
+                </button>
+              </Link>
             </div>
           </div>
         ))}

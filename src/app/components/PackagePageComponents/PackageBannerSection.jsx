@@ -7,6 +7,11 @@ import chickmagaluru from "@/app/components/PackagePageComponents/assets/chikama
 import kotilingeshwaratemple from "@/app/components/PackagePageComponents/assets/kotilingeshwaratemple.png";
 import mysorepalace from "@/app/components/PackagePageComponents/assets/mysorepalace.png";
 import ooty from "@/app/components/PackagePageComponents/assets/ooty.png";
+import isha from "@/app/components/PackagePageComponents/assets/isha.png";
+import tirupati from "@/app/components/PackagePageComponents/assets/tirupathi.webp";
+import madikeri from "@/app/components/PackagePageComponents/assets/madikeri.webp";
+import bannerghatta from "@/app/components/PackagePageComponents/assets/bannerghatta.webp";
+import nandihills from "@/app/components/PackagePageComponents/assets/nandiHillsView.webp";
 
 const PackageBannerSection = () => {
   const sliderArray = [
@@ -14,6 +19,11 @@ const PackageBannerSection = () => {
     { image: kotilingeshwaratemple, title: "Kotilingeshwara Temple" },
     { image: mysorepalace, title: "Mysore Palace" },
     { image: ooty, title: "Ooty" },
+    { image: isha, title: "Chikkaballapura" },
+    { image: tirupati, title: "Chikkaballapura" },
+    { image: madikeri, title: "Chikkaballapura" },
+    { image: bannerghatta, title: "Chikkaballapura" },
+    { image: nandihills, title: "Chikkaballapura" },
   ];
 
   const settings = {

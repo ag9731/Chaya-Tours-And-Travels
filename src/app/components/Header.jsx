@@ -80,7 +80,7 @@ const Header = () => {
           ))}
           <li>
             <Link href="/contactus">
-              <button className="text-black bg-[#e9b100] px-6 py-2 rounded-md hover:bg-black hover:text-white transition-colors duration-300">
+              <button className="text-black cursor-pointer bg-[#e9b100] px-6 py-2 rounded-md hover:bg-black hover:text-white transition-colors duration-300">
                 Book Now
               </button>
             </Link>

@@ -15,20 +15,7 @@ const Footer = () => {
             responsibility.
           </p>
           <div className="flex justify-center md:justify-start gap-4">
-            <a
-              href="#"
-              aria-label="Instagram"
-              className="text-gray-800 hover:text-white transition-colors duration-300"
-            >
-              <Instagram fontSize="medium" />
-            </a>
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="text-gray-800 hover:text-white transition-colors duration-300"
-            >
-              <Facebook fontSize="medium" />
-            </a>
+            
           </div>
         </div>
 
@@ -95,7 +82,7 @@ const Footer = () => {
           </ul>
           <div className="flex justify-center md:justify-start gap-4 mt-3">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61552426832299"
               aria-label="Facebook"
               className="text-gray-800 hover:text-white transition-colors duration-300"
             >

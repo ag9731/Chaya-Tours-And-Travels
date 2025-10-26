@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import bus from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car2.webp";
 import car from "@/app/components/AboutUsPageComponents/AboutUsCarImages/car5.webp";
@@ -97,12 +98,11 @@ const ServicePageSection2 = () => {
                 <p key={i}>{line}</p>
               ))}
             </div>
-            <a
-              href={service.Slink}
-              className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-6 rounded transition mt-3"
-            >
-              Learn More
-            </a>
+            <Link href="/contactus">
+              <button className="mt-auto bg-[#e9b100] text-white cursor-pointer font-semibold py-2 px-4 rounded-lg w-full hover:bg-[#c69700] transition duration-300">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
       ))}

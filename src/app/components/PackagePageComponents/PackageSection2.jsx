@@ -21,6 +21,31 @@ const PackageSection2 = () => {
       sedan: "₹3,499",
       suv: "₹4,200 (depends on vehicle)",
     },
+    {
+      title: "Bannerghatta National Park Trip",
+      sedan: "₹3,200",
+      suv: "₹4,000 (depends on vehicle)",
+    },
+    {
+      title: "Mysore Trip 1 Days",
+      sedan: "₹5,199",
+      suv: "₹6,399 (depends on vehicle)",
+    },
+    {
+      title: "Tirupathi Trip 2 Days(600kms .Min)",
+      sedan: "₹7,799",
+      suv: "₹9,599 (depends on vehicle)",
+    },
+    {
+      title: "Madikeri Trip 3 Days(900kms .Min)",
+      sedan: "₹11,699",
+      suv: "₹14,399 (depends on vehicle)",
+    },
+    {
+      title: "Ooty Trip 3 Days(900kms .Min)",
+      sedan: "₹11,699",
+      suv: "₹14,399 (depends on vehicle)",
+    },
   ];
 
   return (

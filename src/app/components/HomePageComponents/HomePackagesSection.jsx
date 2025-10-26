@@ -4,76 +4,64 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import chickmagaluru from "@/app/components/PackagePageComponents/assets/chikamagaluru.png";
-import kotilingeshwaratemple from "@/app/components/PackagePageComponents/assets/kotilingeshwaratemple.png";
-import mysorepalace from "@/app/components/PackagePageComponents/assets/mysorepalace.png";
-import ooty from "@/app/components/PackagePageComponents/assets/ooty.png";
+// Import relevant destination images
+import nandihills from "@/app/components/PackagePageComponents/assets/nandiHillsView.webp";
 import isha from "@/app/components/PackagePageComponents/assets/isha.png";
+import kotilingeshwaratemple from "@/app/components/PackagePageComponents/assets/kotilingeshwaratemple.png";
+import bannerghatta from "@/app/components/PackagePageComponents/assets/bannerghatta.webp";
+import mysorepalace from "@/app/components/PackagePageComponents/assets/mysorepalace.png";
+import tirupati from "@/app/components/PackagePageComponents/assets/tirupathi.webp";
+import madikeri from "@/app/components/PackagePageComponents/assets/madikeri.webp";
+import ooty from "@/app/components/PackagePageComponents/assets/ooty.png";
 
 const packages = [
   {
-    name: "Chikmagaluru Trip",
-    image: chickmagaluru,
-    pricing: [
-      { label: "4 Hours 40 Km", price: "₹1200" },
-      { label: "8 Hours 80 Km", price: "₹2200" },
-      { label: "Extra Km", price: "₹15" },
-      { label: "Extra Hour", price: "₹150" },
-      { label: "Outstation", price: "₹13/km (Min 300 Km)" },
-      { label: "Driver Bata", price: "₹400" },
-      { label: "Airport Drop/Pick", price: "₹1100 + Toll" },
-    ],
+    title: "Nandi Hills Trip",
+    image: nandihills,
+    sedan: "₹3,299",
+    suv: "₹4,200 (depends on vehicle)",
   },
   {
-    name: "Kotilingeshwara Temple Trip",
-    image: kotilingeshwaratemple,
-    pricing: [
-      { label: "4 Hours 40 Km", price: "₹1500" },
-      { label: "8 Hours 80 Km", price: "₹2400" },
-      { label: "Extra Km", price: "₹20" },
-      { label: "Extra Hour", price: "₹200" },
-      { label: "Driver Bata", price: "₹500" },
-      { label: "Airport Drop/Pick", price: "₹1200 + Toll" },
-    ],
-  },
-  {
-    name: "Mysore Palace Trip",
-    image: mysorepalace,
-    pricing: [
-      { label: "4 Hours 40 Km", price: "₹1600" },
-      { label: "8 Hours 80 Km", price: "₹2900" },
-      { label: "Extra Km", price: "₹18" },
-      { label: "Extra Hour", price: "₹180" },
-      { label: "Outstation", price: "₹16/km" },
-      { label: "Driver Bata", price: "₹400" },
-      { label: "Airport Drop/Pick", price: "₹1800 + Toll" },
-    ],
-  },
-  {
-    name: "Ooty Trip",
-    image: ooty,
-    pricing: [
-      { label: "4 Hours 40 Km", price: "₹1200" },
-      { label: "8 Hours 80 Km", price: "₹2200" },
-      { label: "Extra Km", price: "₹15" },
-      { label: "Extra Hour", price: "₹150" },
-      { label: "Outstation", price: "₹13/km (Min 300 Km)" },
-      { label: "Driver Bata", price: "₹400" },
-      { label: "Airport Drop/Pick", price: "₹1100 + Toll" },
-    ],
-  },
-  {
-    name: "Isha Chikkaballapur Trip",
+    title: "Isha Chikkaballapur Package",
     image: isha,
-    pricing: [
-      { label: "4 Hours 40 Km", price: "₹1300" },
-      { label: "8 Hours 80 Km", price: "₹2300" },
-      { label: "Extra Km", price: "₹15" },
-      { label: "Extra Hour", price: "₹150" },
-      { label: "Outstation", price: "₹13/km (Min 300 Km)" },
-      { label: "Driver Bata", price: "₹400" },
-      { label: "Airport Drop/Pick", price: "₹1100 + Toll" },
-    ],
+    sedan: "₹3,400",
+    suv: "₹4,000 + depends on vehicle",
+  },
+  {
+    title: "Kotilingeshwara Temple One Day Trip",
+    image: kotilingeshwaratemple,
+    sedan: "₹3,499",
+    suv: "₹4,200 (depends on vehicle)",
+  },
+  {
+    title: "Bannerghatta National Park Trip",
+    image: bannerghatta,
+    sedan: "₹3,200",
+    suv: "₹4,000 (depends on vehicle)",
+  },
+  {
+    title: "Mysore Trip 1 Day",
+    image: mysorepalace,
+    sedan: "₹5,199",
+    suv: "₹6,399 (depends on vehicle)",
+  },
+  {
+    title: "Tirupathi Trip 2 Days (600kms Min)",
+    image: tirupati,
+    sedan: "₹7,799",
+    suv: "₹9,599 (depends on vehicle)",
+  },
+  {
+    title: "Madikeri Trip 3 Days (900kms Min)",
+    image: madikeri,
+    sedan: "₹11,699",
+    suv: "₹14,399 (depends on vehicle)",
+  },
+  {
+    title: "Ooty Trip 3 Days (900kms Min)",
+    image: ooty,
+    sedan: "₹11,699",
+    suv: "₹14,399 (depends on vehicle)",
   },
 ];
 
@@ -86,7 +74,8 @@ const HomePackagesSection = () => {
           Our <span className="text-[#e9b100]">Packages</span>
         </h1>
         <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-          Explore our most popular trips and travel packages across South India.
+          Explore our most popular one-day and multi-day trips across South
+          India.
         </p>
       </div>
 
@@ -101,31 +90,35 @@ const HomePackagesSection = () => {
             <div className="relative w-full h-52 sm:h-56 md:h-60 lg:h-64">
               <Image
                 src={pkg.image}
-                alt={pkg.name}
+                alt={pkg.title}
                 fill
-                className="object-cover"
+                className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
 
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow justify-between">
               <h2 className="text-xl font-bold text-[#e9b100] mb-4 text-center">
-                {pkg.name}
+                {pkg.title}
               </h2>
 
-              <ul className="mb-4 space-y-2 text-gray-700 text-sm sm:text-base">
-                {pkg.pricing.map((item, i) => (
-                  <li key={i} className="flex justify-between border-b pb-1">
-                    <span>{item.label}</span>
-                    <span className="font-semibold text-[#e9b100]">
-                      {item.price}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <div className="text-gray-700 text-sm sm:text-base mb-4 space-y-2">
+                <p className="flex justify-between border-b pb-1">
+                  <span className="font-medium text-gray-800">Sedan:</span>
+                  <span className="text-[#e9b100] font-semibold">
+                    {pkg.sedan}
+                  </span>
+                </p>
+                <p className="flex justify-between">
+                  <span className="font-medium text-gray-800">SUV:</span>
+                  <span className="text-[#e9b100] font-semibold">
+                    {pkg.suv}
+                  </span>
+                </p>
+              </div>
 
               <Link href="/contactus">
-                <button className="mt-4 bg-[#e9b100] text-white font-semibold py-2 px-4 rounded-lg w-full hover:bg-[#c69700] transition duration-300">
+                <button className="mt-auto cursor-pointer bg-[#e9b100] text-white font-semibold py-2 px-4 rounded-lg w-full hover:bg-[#c69700] transition duration-300">
                   Book Now
                 </button>
               </Link>

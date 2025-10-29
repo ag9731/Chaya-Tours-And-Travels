@@ -15,8 +15,8 @@ export default function Home() {
         <HomeBanner />
         <HomeAboutUs />
         <HomePackagesSection/>
-        <HomeFacilitiesSection />
         <HomeFleetsSection/>
+        <HomeFacilitiesSection />
         <HomeServices/>
         <HomePageContactUs/>
       </div>

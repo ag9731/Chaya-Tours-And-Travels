@@ -40,7 +40,7 @@ const HomeFleetsSection = () => {
   ];
 
   return (
-    <section className="w-full bg-gray-50 py-16">
+    <section className="w-full bg-gray-50 py-8">
       <div className="container mx-auto px-4 flex flex-col gap-12">
         {/* Section Header */}
         <div className="text-center">

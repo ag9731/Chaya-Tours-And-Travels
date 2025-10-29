@@ -13,6 +13,7 @@ import mysorepalace from "@/app/components/PackagePageComponents/assets/mysorepa
 import tirupati from "@/app/components/PackagePageComponents/assets/tirupathi.webp";
 import madikeri from "@/app/components/PackagePageComponents/assets/madikeri.webp";
 import ooty from "@/app/components/PackagePageComponents/assets/ooty.png";
+import munnar from "@/app/components/PackagePageComponents/assets/munnar.webp";
 
 const packages = [
   {
@@ -46,20 +47,26 @@ const packages = [
     suv: "depends on vehicle",
   },
   {
-    title: "Tirupathi Trip 2 Days (600kms Min)",
+    title: "Tirupathi Trip",
     image: tirupati,
     sedan: "₹13 PKM (drive bata 500)",
     suv: "depends on vehicle",
   },
   {
-    title: "Madikeri Trip 3 Days (900kms Min)",
+    title: "Madikeri Trip",
     image: madikeri,
     sedan: "₹13 PKM (drive bata 500)",
     suv: "depends on vehicle",
   },
   {
-    title: "Ooty Trip 3 Days (900kms Min)",
+    title: "Ooty Trip",
     image: ooty,
+    sedan: "₹13 PKM (drive bata 500)",
+    suv: "depends on vehicle",
+  },
+  {
+    title: "Munnar Trip",
+    image: munnar,
     sedan: "₹13 PKM (drive bata 500)",
     suv: "depends on vehicle",
   },
@@ -77,6 +84,11 @@ const HomePackagesSection = () => {
           Explore our most popular one-day and multi-day trips across South
           India.
         </p>
+        <h1 className="bg-red-500 p-2 text-white font-bold text-center mt-3">
+          For Outstation Trip: Note: Driver bata, toll, parking, inter state
+          permit extra. After 10 PM, if the vehicle continues driving,
+          additional driver bata will be charged.
+        </h1>
       </div>
 
       {/* Packages Grid */}

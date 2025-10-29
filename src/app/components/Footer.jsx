@@ -14,9 +14,19 @@ const Footer = () => {
             services for local, outstation, and airport trips. Your journey, our
             responsibility.
           </p>
-          <div className="flex justify-center md:justify-start gap-4">
-            
+
+          {/* ➕ Added Outstation Trip Note */}
+          <div className="bg-white/30 rounded-lg p-3 text-gray-900 text-sm font-medium">
+            <h3 className="font-semibold text-black mb-1">
+              For Outstation Trip
+            </h3>
+            <p>
+              Note: Driver bata, Toll, Parking, Inter-state permit extra. After
+              night 10pm, if vehicle driving extra, driver bata will be added.
+            </p>
           </div>
+
+          <div className="flex justify-center md:justify-start gap-4 mt-4"></div>
         </div>
 
         {/* 2️⃣ Quick Links */}

@@ -1,5 +1,11 @@
 "use client";
-import { Facebook, Instagram, WhatsApp, Call } from "@mui/icons-material";
+import {
+  Facebook,
+  Instagram,
+  WhatsApp,
+  Call,
+  Twitter,
+} from "@mui/icons-material";
 
 const FloatingIcons = () => {
   return (
@@ -28,7 +34,7 @@ const FloatingIcons = () => {
 
       {/* Instagram */}
       <a
-        href="https://instagram.com"
+        href="https://www.instagram.com/chayatoursand/?igsh=d2hvZmZicXgzMWx3#"
         target="_blank"
         rel="noopener noreferrer"
         className="
@@ -40,9 +46,23 @@ const FloatingIcons = () => {
         <Instagram className="text-lg md:text-xl lg:text-2xl" />
       </a>
 
+      {/* Twitter (X) */}
+      <a
+        href="https://x.com/ChayaAnd33232?t=LFKFe0ad2PkhmuDaLVrolw&s=08"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          bg-black text-white rounded-full p-2 
+          shadow-lg hover:scale-110 hover:bg-gray-800 transition 
+          md:p-3 lg:p-4
+        "
+      >
+        <Twitter className="text-lg md:text-xl lg:text-2xl" />
+      </a>
+
       {/* WhatsApp */}
       <a
-        href="https://wa.me/918123456789"
+        href="https://wa.me/916363987198"
         target="_blank"
         rel="noopener noreferrer"
         className="
@@ -56,7 +76,7 @@ const FloatingIcons = () => {
 
       {/* Call */}
       <a
-        href="tel:+918123456789"
+        href="tel:+916363987198"
         className="
           bg-orange-500 text-white rounded-full p-2 
           shadow-lg hover:scale-110 hover:bg-orange-600 transition 

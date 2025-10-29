@@ -42,26 +42,26 @@ const packages = [
   {
     title: "Mysore Trip 1 Day",
     image: mysorepalace,
-    sedan: "₹5,199",
-    suv: "₹6,399 (depends on vehicle)",
+    sedan: "₹6,500",
+    suv: "depends on vehicle",
   },
   {
     title: "Tirupathi Trip 2 Days (600kms Min)",
     image: tirupati,
-    sedan: "₹7,799",
-    suv: "₹9,599 (depends on vehicle)",
+    sedan: "₹13 PKM (drive bata 500)",
+    suv: "depends on vehicle",
   },
   {
     title: "Madikeri Trip 3 Days (900kms Min)",
     image: madikeri,
-    sedan: "₹11,699",
-    suv: "₹14,399 (depends on vehicle)",
+    sedan: "₹13 PKM (drive bata 500)",
+    suv: "depends on vehicle",
   },
   {
     title: "Ooty Trip 3 Days (900kms Min)",
     image: ooty,
-    sedan: "₹11,699",
-    suv: "₹14,399 (depends on vehicle)",
+    sedan: "₹13 PKM (drive bata 500)",
+    suv: "depends on vehicle",
   },
 ];
 

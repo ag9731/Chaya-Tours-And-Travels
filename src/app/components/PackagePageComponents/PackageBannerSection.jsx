@@ -20,9 +20,9 @@ const PackageBannerSection = () => {
     { image: mysorepalace, title: "Mysore Palace" },
     { image: ooty, title: "Ooty" },
     { image: isha, title: "Chikkaballapura" },
-    { image: tirupati, title: "Chikkaballapura" },
-    { image: madikeri, title: "Chikkaballapura" },
-    { image: bannerghatta, title: "Chikkaballapura" },
+    { image: tirupati, title: "Tirupati" },
+    { image: madikeri, title: "Madikeri" },
+    { image: bannerghatta, title: "Bannerghatta" },
     { image: nandihills, title: "Chikkaballapura" },
   ];
 

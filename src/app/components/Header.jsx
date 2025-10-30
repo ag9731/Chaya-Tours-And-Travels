@@ -104,13 +104,21 @@ const Header = () => {
         <div className="lg:hidden bg-white shadow-md">
           <ul className="flex flex-col gap-4 p-4">
             {menuItems.map((menuItem, index) => (
-              <li
-                key={index}
-                className="cursor-pointer hover:text-[#e9b100] transition-colors duration-300 "
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <Link href={menuItem.href}>{menuItem.menuName}</Link>
-              </li>
+              // <li
+              //   key={index}
+              //   className="cursor-pointer hover:text-[#e9b100] transition-colors duration-300 "
+              //   onClick={() => setMobileMenuOpen(false)}
+              // >
+              //   <Link href={menuItem.href}>{menuItem.menuName}</Link>
+              // </li>
+              <Link href={menuItem.href} key={index}>
+                <li
+                  className="cursor-pointer hover:text-[#e9b100] transition-colors duration-300"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {menuItem.menuName}
+                </li>
+              </Link>
             ))}
             <li>
               <Link href="/contactus">

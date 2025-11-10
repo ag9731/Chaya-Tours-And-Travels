@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FloatingSocialIcons from "./components/FloatingSocialIcons";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,15 +20,16 @@ export const metadata = {
   description:
     "Based in Bengaluru, Chaya Tours & Travels specializes in curated domestic & South India tours, seamless travel arrangements, and local expertise.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 };
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
         {children}

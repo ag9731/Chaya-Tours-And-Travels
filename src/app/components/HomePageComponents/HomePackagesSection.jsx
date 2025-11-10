@@ -84,11 +84,11 @@ const HomePackagesSection = () => {
           Explore our most popular one-day and multi-day trips across South
           India.
         </p>
-        <h1 className="bg-red-500 p-2 text-white font-bold text-center mt-3">
+        {/* <h1 className="bg-red-500 p-2 text-white font-bold text-center mt-3">
           For Outstation Trip: Note: Driver bata, toll, parking, inter state
           permit extra. After 10 PM, if the vehicle continues driving,
           additional driver bata will be charged.
-        </h1>
+        </h1> */}
       </div>
 
       {/* Packages Grid */}

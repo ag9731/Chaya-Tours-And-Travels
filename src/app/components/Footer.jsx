@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#e9b100] shadow-sm py-10 mt-10">
       <div className="container mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center md:text-left">
+        
         {/* 1️⃣ About Us */}
         <div>
           <h2 className="text-xl font-semibold mb-3 text-black">About Us</h2>
@@ -15,7 +16,6 @@ const Footer = () => {
             responsibility.
           </p>
 
-          {/* ➕ Added Outstation Trip Note */}
           <div className="bg-white/30 rounded-lg p-3 text-gray-900 text-sm font-medium">
             <h3 className="font-semibold text-black mb-1">
               For Outstation Trip
@@ -114,6 +114,17 @@ const Footer = () => {
         © {new Date().getFullYear()}{" "}
         <span className="font-semibold">Chaya Tours & Travels</span>. All rights
         reserved.
+        <br />
+        <span className="text-[12px] mt-1 block">
+          Developed & Designed by{" "}
+          <a
+            href="https://www.parvidigital.com/"
+            className="font-semibold underline hover:text-white"
+            target="_blank"
+          >
+            Parvi Digital
+          </a>
+        </span>
       </div>
     </footer>
   );

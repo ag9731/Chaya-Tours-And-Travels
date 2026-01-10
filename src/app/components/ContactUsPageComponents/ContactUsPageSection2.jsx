@@ -28,10 +28,10 @@ const ContactUsPageSection2 = () => {
               <LocationOn /> 1401 21st Street, Suite R, Sacramento, CA 95811
             </p>
             <p className="flex items-center gap-2">
-              <Phone /> +91 98765 43210
+              <Phone /> +91 63639 87198
             </p>
             <p className="flex items-center gap-2">
-              <Email /> info@example.com
+              <Email /> info@chayatoursandtravels.com
             </p>
           </div>
 
@@ -40,10 +40,10 @@ const ContactUsPageSection2 = () => {
               Follow Us
             </h3>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-800 hover:text-white transition">
+              <a href="https://www.facebook.com/people/Chaya-Tours-and-Travels/61552426832299/" className="text-gray-800 hover:text-white transition">
                 <Facebook />
               </a>
-              <a href="#" className="text-gray-800 hover:text-white transition">
+              <a href="https://www.instagram.com/chayatoursand/?igsh=d2hvZmZicXgzMWx3#" className="text-gray-800 hover:text-white transition">
                 <Instagram />
               </a>
             </div>

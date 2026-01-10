@@ -42,7 +42,7 @@ const Header = () => {
             className="flex items-center gap-1 sm:gap-2 text-black cursor-pointer hover:text-gray-800"
           >
             <EmailIcon className="text-black !text-[16px] sm:!text-[18px]" />
-            <p className="truncate">pravegowda676@gmail.com</p>
+            <p className="truncate">info@chayatoursandtravels.com</p>
           </a>
 
           {/* Social Icons */}

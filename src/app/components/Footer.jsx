@@ -84,7 +84,7 @@ const Footer = () => {
               <span>📞</span> +91 63639 87198
             </li>
             <li className="flex items-center justify-center md:justify-start gap-2">
-              <span>📧</span> pravegowda676@gmail.com
+              <span>📧</span> info@chayatoursandtravels.com
             </li>
             <li className="flex items-center justify-center md:justify-start gap-2">
               <span>📍</span> Bengaluru, Karnataka

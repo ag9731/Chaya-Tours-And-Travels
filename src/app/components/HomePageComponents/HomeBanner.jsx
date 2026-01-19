@@ -34,7 +34,7 @@ const HomeBanner = () => {
               priority
             />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/30"></div>
+            <div className="absolute inset-0 bg-black/60"></div>
           </div>
         ))}
       </Slider>
